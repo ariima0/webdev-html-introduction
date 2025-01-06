@@ -155,8 +155,8 @@ body {
 body {
     font-family: Arial, sans-serif;
     background-color: #4f2e00; /* Brown background matching logo */
-    display: flex;
-    flex-direction: column;
+    display: flex;  
+    flex-direction: column; 
     align-items: center;
     color: white;
 }
@@ -186,6 +186,64 @@ body {
     color: #333333;
     line-height: 1.5;
     margin-bottom: 20px;
+}
+.computing_courses_container {
+background-color: #fcb565;
+width: 80%;
+max-width: 600px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.2);
+text-align: center;
+margin: 40px auto;
+}
+
+.computing_courses_conainer h1 {
+    color: #ee7600;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.computing_courses_container p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+}
+.container {
+    background-color: #fcb565;
+width: 80%;
+max-width: 600px;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 4px 8 px rgba(0, 0, 0, 0.2);
+text-align: center;
+margin: 40px auto;
+}
+
+.container h1 {   
+    color: #ee7600;
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+.container p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+/* List styling */
+.container ul {
+    margin-left: 20px; /* Indent lists */
+    color: #333333;
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+.container ul li {
+    margin-bottom: 10px; /* Space between list items */
 }
 
 /* Footer styling */
@@ -249,4 +307,262 @@ footer {
     padding: 10px 20px; /* Ensure padding matches header styling */
     margin-top: 10px; /* Adds space below the header */
     display: inline-block;
+}
+/* Header styling for all pages */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; /* Space around the header content */
+    background-color: #4f2e00; /* Brown background matching logo */
+    color: white;
+    box-sizing: border-box;
+}
+
+.page-header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ee7600; /* Orange color from logo */
+    margin: 0; /* Prevents header text overflow */
+}
+
+/* Navigation links within the header */
+.main-nav a {
+    margin: 0 10px; /* Space between links */
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #ff9d1f;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #ff9d1f; /* Lighter orange for hover effect */
+}
+
+/* Specific Home button styling */
+.home-button a {
+    padding: 10px 20px;
+    margin-top: 10px; /* Adds space under the header */
+    display: inline-block;
+    color: #ffffff;
+    background-color: #ff9d1f;
+    border: 2px solid #ee7600;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-button a:hover {
+    background-color: #ff9d1f;
+    border-color: #ff9d1f;
+}
+
+.copyRight{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:dark br
+}
+
+footer {
+    background-color: #4f2e00; /* Matching the brown theme */
+    color: white;
+    padding: 20px 10px;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 2px solid #ee7600; /* Orange from the logo */
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 200px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    color: #ff9d1f; /* Lighter orange for section headers */
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 5px 0;
+}
+
+.footer-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+    color: #ff9d1f; /* Highlighted orange on hover */
+}
+
+.footer-section p, .social-links a {
+    margin: 5px 0;
+    color: white;
+    text-decoration: none;
+}
+
+.social-links a {
+    margin: 0 5px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #ff9d1f;
+}
+
+
+.facilities {
+    background-color: #fcb565;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 40px auto;
+    max-width: 800px;
+    text-align: left;
+    font-family: Arial, sans-serif;
+}
+
+.facilities h2, .facilities h3 {
+    color: #ee7600;
+}
+
+.facilities ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    line-height: 1.6;
+    color: #704820;
+}
+
+.facilities ul li {
+    margin-bottom: 10px;
+}
+
+.facilities p {
+    line-height: 1.8;
+    color: #333333;
+}
+
+.banner {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.contact-layout {
+    display: flex; /* Enables side-by-side layout */
+    justify-content: space-between; /* Ensures space between the images */
+    align-items: flex-start; /* Aligns both images at the top */
+    gap: 50px; /* Adds spacing between the images */
+    margin: 78px auto; /* Centers the layout and adds vertical space */
+    width: 120%; /* Makes it responsive */
+    max-width: 1250px; /* Limits the maximum width */
+}
+
+.contact-image img,
+.additional-image img {
+    width: 100%; /* Ensures each image takes up 45% of the container */
+    height: max-content; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Adds a shadow for better design */
+}
+
+/* For small screens, stack the images */
+@media (max-width: 1200px) {
+    .contact-layout {
+        flex-direction: column; /* Stacks the images vertically */
+    }
+
+    .contact-image img,
+    .additional-image img {
+        width: 150%; /* Makes the images full-width */
+        margin-bottom: 20px; /* Adds spacing for the stacked layout */
+    }
+}
+
+.help-container {
+    background-color: #fcb565;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 45%;
+}
+
+.help-container h3 {
+    color: #ee7600;
+    font-size: 1.8rem;
+    margin-bottom: 100px auto;
+}
+
+.help-container p, .help-container ul {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.5;
+}
+
+.help-container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.help-container ul li {
+    margin-bottom: 100px auto;
+}
+
+.help-container ul li strong {
+    color: #ee7600;
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the banner without distortion */
+}
+
+.banner-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    text-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.banner-text h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    margin-top: 10px;
 }
