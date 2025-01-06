@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Metadata and Link Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cantor College</title>
+    
+    <!-- Link to External CSS -->
+    <link rel="stylesheet" href="design.css">
+</head>
+
+<body>
+    <!-- Main Navigation Section -->
+    <div class="tree-nav">
+        <!-- Home Button (Top of the Tree) -->
+        <div class="home-button">
+            <a href="index.html">Home</a>
+        </div>
+
+        <!-- Vertical Line from Home Button to Horizontal Line -->
+        <div class="line"></div>
+
+        <!-- Horizontal Navigation Menu (Branch) -->
+        <ul class="menu">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="design_courses.html">Design Courses</a></li>
+            <li><a href="computing_courses.html">Computing Courses</a></li>
+            <li><a href="facilities.html">Facilities</a></li>
+            <li><a href="learning_resources.html">Learning Resources</a></li>
+            <li><a href="staff_info.html">Staff Info</a></li>
+            <li><a href="student_info.html">Student Info</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+    </div>
+    <img src="website-images-assets/logo.png" alt="Cantor College Logo" class="logo">
+
+    <div class="slideshow-container">
+        <div class="slide fade">
+            <img src="website-images-assets/IMG_1437.jpeg" alt="Campus Image 1">
+        </div>
+        <div class="slide fade">
+            <img src="website-images-assets/IMG_1808.jpeg" alt="Campus Image 2">
+        </div>
+        <div class="slide fade">
+            <img src="website-images-assets/IMG_1089.jpeg" alt="Campus Image 3">
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        showSlides();
+    
+        function showSlides() {
+            const slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";  // Hide all slides
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) { 
+                slideIndex = 1;
+            }
+            slides[slideIndex - 1].style.display = "block";  // Show current slide
+            setTimeout(showSlides, 3000);  // Change image every 3 seconds
+        }
+    </script>
+    
+
+</body>

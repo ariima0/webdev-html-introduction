@@ -1,0 +1,252 @@
+/* Reset default margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4f2e00; /* Brown background similar to logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Main navigation styling */
+.tree-nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Home button styling */
+.home-button {
+    margin-bottom: 20px; /* Space between Home button and the vertical line */
+    text-align: center;
+}
+
+.home-button a {
+    padding: 10px 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ee7600; /* Orange similar to logo */
+    border: 2px solid #ee7600;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.home-button a:hover {
+    background-color: #ff9d1f; /* Lighter orange for hover effect */
+    border-color: #ff9d1f;
+}
+
+/* Vertical line from Home button */
+.line {
+    width: 2px;
+    height: 40px; /* Adjust height as needed */
+    background-color: #ee7600;
+}
+
+/* Horizontal line connecting all buttons, positioned above the buttons */
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    margin-top: 20px;
+}
+
+.menu-line {
+    position: absolute;
+    top: -10px; /* Adjust this to control vertical position of the line */
+    height: 2px;
+    width: 100%;
+    background-color: #ee7600;
+}
+
+/* Horizontal menu styling */
+.menu {
+    display: flex;
+    gap: 30px; /* Space between each menu item */
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+/* Vertical lines connecting each button to the horizontal line */
+.menu li {
+    position: relative;
+    text-align: center;
+}
+
+.menu li::before {
+    content: '';
+    position: absolute;
+    top: -20px; /* Position it to connect with the horizontal line */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 20px; /* Length of vertical line connecting each button */
+    background-color: #ee7600;
+}
+
+/* Menu item button styling to match the Home button */
+.menu a {
+    display: inline-block;
+    padding: 10px 20px; /* Match padding with Home button */
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #ee7600; /* Orange similar to logo */
+    border: 2px solid #ee7600;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.menu a:hover {
+    background-color: #ff9d1f; /* Lighter orange on hover */
+    border-color: #ff9d1f;
+}
+.logo {
+    position: absolute;
+    top: 10px; /* Distance from the top of the screen */
+    left: 10px; /* Distance from the left of the screen */
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Keeps the logo's aspect ratio */
+    z-index: 1000; /* Ensures it appears above other elements */
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    max-width: 80%;
+    margin: auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Each slide */
+.slide {
+    display: none; /* Hide all slides initially */
+}
+
+/* Image styling */
+.slide img {
+    width: 100%; /* Make images responsive */
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Fade animation */
+.fade {
+    animation: fade 2s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #4f2e00; /* Brown background matching logo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+
+/* Design Courses main container */
+.design-courses-container {
+    background-color: #fcb565; /* White background for readability */
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: 40px auto;
+}
+
+/* Page header styling */
+.design-courses-container h1 {
+    color: #ee7600; /* Orange from logo */
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+
+/* Page paragraph styling */
+.design-courses-container p {
+    font-size: 1.1rem;
+    color: #333333;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Footer styling */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #4f2e00; /* Matching the brown body background */
+    color: white;
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+}
+/* Header styling */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #4f2e00; /* Brown similar to logo */
+    color: white;
+}
+
+/* Header styling */
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px; /* Added padding to create space */
+    background-color: #4f2e00;
+    color: white;
+    box-sizing: border-box;
+}
+
+.page-header h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #ee7600;
+    margin: 0; /* Remove margin to prevent overflow */
+    padding: 0;
+}
+
+/* Navigation links in the header */
+.main-nav a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: #e93fb0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.main-nav a:hover {
+    background-color: #ff9d1f;
+}
+
+/* Home button specifically (if needed) */
+.home-button a {
+    padding: 10px 20px; /* Ensure padding matches header styling */
+    margin-top: 10px; /* Adds space below the header */
+    display: inline-block;
+}
